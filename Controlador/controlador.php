@@ -6,19 +6,20 @@
     //verifica que el boton sea el de ingresar
     if($ingreso=='ingresar'){
         session_start();
-        $correoUsu = $_POST["correoUsu"];
-        $passwordUsu = $_POST["passwordUsu"];
-    
-
+        $rol      = $_POST["rol"];
+        $correo   = $_POST["fcorreoUsu"];
+        $password = $_POST["fpasswordUsu"];
+        $numId    = $_POST["fnumId"];
+       
         include_once("../modelo/mdloguin.php");
-        $modelo = new loguin($conexion,$rol,$correoUsu,$passwordUsu,$numIdUsu);
+        $modelo = new loguin($conexion,$rol,$correo,$password,$numId);
         $numIdUsu = $modelo->verificar();
         $nombreUsu = $modelo->getNombre();
         
         if($id > 0){
             $_SESSION["numIdUsu"]=$numIdUsu;
             $_SESSION["estado"]="si";
-            $_SESSION["nombre"]=$nombreUsu;
+           
             header("location:../vista/principal.php");   
             
         }

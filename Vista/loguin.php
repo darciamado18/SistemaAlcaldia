@@ -17,16 +17,26 @@
                <div class="row  ">
                    
 
-                   <h4 class="fw-bold  text-center py-4">Bienvenido a Biblioteca SENA</h4>
+                   <h4 class="fw-bold  text-center py-4">BIENVENIDOS</h4>
 
                    <form action="../controlador/Controlador.php" method="post">
+                      
                        <div class="mb-2">
-                           <label for="email" class="form-label">Correo Electronico</label>
-                           <input type="email" class="form-control" name="femail"> 
+                            <select name="rol">
+                            <option selected value="0"> Elige una opción </option>
+                            <optgroup label="rol1"> 
+                            <option value="1">Administrador </option>
+                            <option value="2">Usuario       </option>
+                        </div>
+
+                       <div class="mb-2">
+                           <label for="correo" class="form-label" placeholder="nombre@sucorreo.com" required autofocus >CORREO ELECTRONICO: </label>
+                           <input type="email" class="form-control" name="fcorreoUsu"> 
                        </div>
+                       <br>
                        <div class="mb-2">
-                           <label for="password" class="form-label">Contraseña</label>
-                           <input type="password" place class="form-control" name="fcontraseña"> 
+                           <label for="password" class="form-label">CONTRASEÑA: </label>
+                           <input type="password" place class="form-control" name="fpasswordUsu"> 
                        </div>
                        <div class="d-grid">
                            <button type="submit" class="btn btn-primary botones" name="fboton" value="ingresar">Iniciar Sesion</button>
