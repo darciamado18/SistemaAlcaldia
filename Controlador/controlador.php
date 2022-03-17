@@ -1,6 +1,6 @@
 <?php
     $ingreso = $_POST["fboton"];
-    include_once("../modelo/conexion.php");
+    include_once("../modelo/mdconexion.php");
     $objeto = new Conexion();
     $conexion = $objeto->conectarbd();
     //verifica que el boton sea el de ingresar
@@ -10,7 +10,7 @@
         $passwordUsu = $_POST["passwordUsu"];
     
 
-        include_once("../modelo/loguin.php");
+        include_once("../modelo/mdloguin.php");
         $modelo = new loguin($conexion,$rol,$correoUsu,$passwordUsu,$numIdUsu);
         $numIdUsu = $modelo->verificar();
         $nombreUsu = $modelo->getNombre();
