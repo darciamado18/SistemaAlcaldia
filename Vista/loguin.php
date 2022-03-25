@@ -22,12 +22,13 @@
                    <form action="../controlador/Controlador.php" method="post">
                       
                        <div class="mb-2">
-                            <select name="rol">
+                            <select name="frol">
                             <option selected value="0"> Elige una opción </option>
-                            <optgroup label="rol1"> 
+                            <optgroup label="rol_"> 
                             <option value="1">Administrador </option>
                             <option value="2">Usuario       </option>
                         </div>
+                        <br> 
 
                        <div class="mb-2">
                            <label for="correo" class="form-label" placeholder="nombre@sucorreo.com" required autofocus >CORREO ELECTRONICO: </label>
@@ -39,7 +40,7 @@
                            <input type="password" place class="form-control" name="fpasswordUsu"> 
                        </div>
                        <div class="d-grid">
-                           <button type="submit" class="btn btn-primary botones" name="fboton" value="ingresar">Iniciar Sesion</button>
+                           <button type="submit" class="btn btn-primary botones" name="fboton" value="ingresar">INICIAR SESION</button>
                        </div>
                    </form>
                    <?php

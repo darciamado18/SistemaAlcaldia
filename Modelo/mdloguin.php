@@ -15,7 +15,10 @@
         }
 
         function verificar(){
-            $verificar = mysqli_query($this->_conexion,"SELECT rol , correoUsu , passwordUsu FROM usuarioAlcaldia WHERE rol = '$this->_rol' and  correoUsu = '$this->_correoUsu' and passwordUsu = '$this->_passwordUsu'  and numIdUsu FROM datospersonalesUsu WHERE numIdUsu = '$this->_numIdUsu' ") or die(mysqli_error( $this->_conexion));
+            $verificar = mysqli_query($this->_conexion,"SELECT rol , correoUsu , passwordUsu , numIdUsu
+            FROM datospersonalesUsu D , usuarioAlcaldia U WHERE rol = '$this->_rol' and  correoUsu = '$this->_correoUsu' 
+            and passwordUsu = '$this->_passwordUsu' and numIdUsu = '$this->_numIdUsu' ") 
+            or die(mysqli_error( $this->_conexion));
             
             if(mysqli_num_rows($verificar)){
                 $unusuario = mysqli_fetch_array($verificar);
@@ -28,7 +31,7 @@
             return $this->_numIdUsu;
         }
         function getNombre(){
-            return $this->nombre;
+            return $this-> nombre;
     }
 }
 ?> 

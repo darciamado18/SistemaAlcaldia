@@ -9,15 +9,15 @@
         $rol      = $_POST["rol"];
         $correo   = $_POST["fcorreoUsu"];
         $password = $_POST["fpasswordUsu"];
-        $numId    = $_POST["fnumId"];
+        
        
         include_once("../modelo/mdloguin.php");
-        $modelo = new loguin($conexion,$rol,$correo,$password,$numId);
+        $modelo = new loguin($objeto, $conexion,$rol,$correo,$password);
         $numIdUsu = $modelo->verificar();
         $nombreUsu = $modelo->getNombre();
         
         if($id > 0){
-            $_SESSION["numIdUsu"]=$numIdUsu;
+            $_SESSION["fnumIdUsu"]=$numIdUsu;
             $_SESSION["estado"]="si";
            
             header("location:../vista/principal.php");   
