@@ -6,7 +6,7 @@
     //verifica que el boton sea el de ingresar
     if($ingreso=='ingresar'){
         session_start();
-        $rol      = $_POST["rol"];
+        $rol      = $_POST["frol"];
         $correo   = $_POST["fcorreoUsu"];
         $password = $_POST["fpasswordUsu"];
         
