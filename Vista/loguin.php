@@ -18,19 +18,27 @@
                    
 
                    <h4 class="fw-bold  text-center py-4">BIENVENIDOS</h4>
+                    <br>
+
 
                    <form action="../controlador/Controlador.php" method="post">
                       
                        <div class="mb-2">
+                        
+                            <label for="frol" class="form-label">ROL: </label>
                             <select name="frol">
                             <option selected value="0"> Elige una opción </option>
                             <optgroup label="rol_"> 
                             <option value="1">Administrador </option>
                             <option value="2">Usuario       </option>
+                            <br>
                         </div>
                         <br> 
+                        <br>
 
-                       <div class="mb-2">
+                       <div class="mb-3">
+                           <br>
+                           <br/>
                            <label for="correo" class="form-label" placeholder="nombre@sucorreo.com" required autofocus >CORREO ELECTRONICO: </label>
                            <input type="email" class="form-control" name="fcorreoUsu"> 
                        </div>
