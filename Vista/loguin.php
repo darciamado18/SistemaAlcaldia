@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loguin</title>
     <link href="../boodstrap/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/hoja.css" >
+    <link rel="stylesheet" href="../css/style.css" >
 </head>
-<body background="../imagenes/desc5.jpg">
+<body background=" ../imagenes/desc5.jpg" >
 <div class="container w-100  mt-5 mb-5 ">
        
        <div class="row ">
@@ -21,7 +21,7 @@
                     <br>
 
 
-                   <form action="../controlador/Controlador.php" method="post">
+                   <form action="../controlador/controlador.php" method="post">
                       
                        <div class="mb-2">
                         
@@ -70,6 +70,6 @@
        
    </div>
 
-   <script src="../boodstrap/bootstrap.bundle.js"></script>    
+   <script src="../bootstrap/bootstrap.bundle.js"></script>    
 </body>
 </html>
