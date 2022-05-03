@@ -8,7 +8,7 @@
     <link href="../boodstrap/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" >
 </head>
-<body background=" ../imagenes/desc5.jpg" >
+<body background="../imagenes/saman.jpg">
 <div class="container w-100  mt-5 mb-5 ">
        
        <div class="row ">
@@ -22,34 +22,20 @@
 
 
                    <form action="../controlador/controlador.php" method="post">
-                      
-                       <div class="mb-2">
                         
-                            <label for="frol" class="form-label">ROL: </label>
-                            <select name="frol">
-                            <option selected value="0"> Elige una opción </option>
-                            <optgroup label="rol_"> 
-                            <option value="1">Administrador </option>
-                            <option value="2">Usuario       </option>
-                            <br>
-                        </div>
                         <br> 
-                        <br>
-
-                       <div class="mb-3">
-                           <br>
-                           <br/>
-                           <label for="correo" class="form-label" placeholder="nombre@sucorreo.com" required autofocus >CORREO ELECTRONICO: </label>
-                           <input type="email" class="form-control" name="fcorreoUsu"> 
-                       </div>
+                        
+                        <p> CORREO ELECTRONICO: <input type="email" name="fcorreoUsu" 
+                                                placeholder="nombre@sucorreo.com"> 
+                        </p>
+                       
                        <br>
-                       <div class="mb-2">
-                           <label for="password" class="form-label">CONTRASEÑA: </label>
-                           <input type="password" place class="form-control" name="fpasswordUsu"> 
-                       </div>
-                       <div class="d-grid">
-                           <button type="submit" class="btn btn-primary botones" name="fboton" value="ingresar">INICIAR SESION</button>
-                       </div>
+                        <p>CONTRASEÑA:          <input type="password"  name="fpasswordUsu"> 
+                        </p>
+
+                        <p>   <button type="submit" class="btn btn-primary botones" name="fboton" 
+                                   value="ingresar">INICIAR SESION</button>
+                        </p>
                    </form>
                    <?php
                     @$mensaje = $_GET['mensaje'];
