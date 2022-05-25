@@ -4,9 +4,9 @@
         private $_rol;
         private $_correoUsu;
         private $_passwordUsu;
-        private $_numIdUsu;
+        
 
-        function __construct($conexion,$rol,$correoUsu,$passwordUsu, $numIdUsu){
+        function __construct($conexion,$rol,$correoUsu,$passwordUsu){
             $this-> _conexion = $conexion;
             $this-> _rol= $rol;
             $this-> _correoUsu = $correoUsu;

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loguin</title>
     <link href="../bootstrap/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css" >
+  
 </head>
-<body background="../imagenes/saman.jpg">
+<body background="../imagenes/saman.jpg" width = "500">
 <div class="container w-100  mt-5 mb-5 ">
 
                  
@@ -41,7 +41,7 @@
 </div>
 
                <div class="row mt-4 " >
-                   <img src="../imagenes/aprobado.png" width="100" >
+                   <img src="../imagenes/aprobado.png" width="200" >
                </div>
            </div>
            <div class="col-1 col-md-3 col-lg-4"></div>
