@@ -11,7 +11,6 @@
             $this-> _rol= $rol;
             $this-> _correoUsu = $correoUsu;
             $this-> _passwordUsu = $passwordUsu;
-            $this-> _numIdUsu = $numIdUsu;                
         }
 
         function verificar(){

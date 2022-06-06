@@ -30,13 +30,13 @@
                         <p class="submit"><center> <input type="submit" name="fboton" value="INGRESAR"></center> </p>
                    </form>
                    <?php
-                    @$mensaje = $_GET['mensaje'];
+                   /* @$mensaje = $_GET['mensaje'];
                     if (isset($mensaje)){
                     if($mensaje=='incorrecto'){
                             echo '<div  class="alert alert-danger" role="alert"> usuario o clave incorrecto</div>';
                         }
 
-                    }
+                    }*/
                     ?>
 </div>
 
