@@ -10,18 +10,16 @@
 </head>
 
 <body background="../imagenes/landazuri.jpg">
-<div class="container ">
-       
-      
+    <div class="container ">        
+           <div class="row  ">              
 
-           <div class="row  ">                  
-
-                   <h1 class="fw-bold  text-center py-4">BIENVENIDO A LA PLATAFORMA ALCALDIA</h1>
+                   <h1 class="text-center"> BIENVENIDO A LA PLATAFORMA ALCALDIA </h1>
+                  
+                   <br>
 
                    <form action="../controlador/controlador.php" method="post">
-
                        <div class="mb-2">
-                           <label for="email" class="form-label">Correo Electronico</label>
+                           <label for="email" class="form-label">CORREO ELECTRONICO</label>
                            <input type="email" class="form-control" name="femail"> 
                        </div>
                        <br>
@@ -34,9 +32,6 @@
                            <button type="submit" class="btn btn-primary botones" name="fboton" value="ingresar">INICIAR SESION</button>
                        </div>
                    </form>
-
-
-
 
 </body>
 </html>
