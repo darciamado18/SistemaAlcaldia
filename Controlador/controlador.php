@@ -7,12 +7,12 @@
     if($ingreso=='ingresar'){
         session_start();
         $rol      = $_POST["frol"];
-        $correo   = $_POST["fcorreoUsu"];
-        $password = $_POST["fpasswordUsu"];
+        $correoUsu   = $_POST["fcorreoUsu"];
+        $passwordUsu = $_POST["fpasswordUsu"];
         
        
         include_once("../modelo/mdloguin.php");
-        $modelo = new loguin($objeto, $conexion,$rol,$correo,$password);
+        $modelo = new loguin($objeto, $conexion,$rol,$correoUsu,$passwordUsu);
         $numIdUsu = $modelo->verificar();
         $nombreUsu = $modelo->getNombre();
         
@@ -20,7 +20,7 @@
             $_SESSION["fnumIdUsu"]=$numIdUsu;
             $_SESSION["estado"]="si";
            
-            header("location:../vista/principal.php");   
+            header("location: principal.php");   
             
         }
         else{

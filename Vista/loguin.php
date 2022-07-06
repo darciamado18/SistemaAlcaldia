@@ -9,26 +9,44 @@
 </head>
 
 <body background="../imagenes/landazuri.jpg">
-    <div class="container">        
-           <div class="row">              
 
-                   <h1 class="text-center text-success"> BIENVENIDO A LA PLATAFORMA ALCALDIA </h1>
-                  
+    <div>
+    <h1 class="text-center">
+      <h1 class="text-primary">
+         BIENVENIDO A LA PLATAFORMA ALCALDIA 
+      </h1>   
+    </h1>
+    </div>
+
+    <div class="container">        
+           <div class="row">  
+                <div class="col-lg-15">    
+
                    <br>
 
-                   <form action="../controlador/controlador.php" method="post">
+                   <form action="controlador.php" method="post">
 
                        <div>
-                            <label for="rol" class="form-label"></label>
-                       </div>
-                       <div class="mb-2">
-                           <label for="correoUsu" class="form-label">CORREO ELECTRONICO</label>
-                           <input type="email" class="form-control" name="fcorreoUsu" id="correoUsu"> 
+
+                            <label for="rol" class="form-label">ROL:</label>
+                            <select name="frol">  
+                          
+                            <optgroup label="rol_"> 
+                            <option value="0">Administrador </option>
+                            <option value="1">Usuario       </option>
+                        
                        </div>
                        <br>
-                       <div class="mb-2">
+                       <br>
+                       <div class="mb-0">
+                        <br>
+                           <label for="correoUsu" class="form-label" >Correo Electronico:</label>
+                           <input type="email" class="form-control" name="fcorreoUsu" id="correoUsu" placeholder="Escribe Su Correo"> 
+                       </div>
+                       <br>
+                       <div class="mb-0">
                            <label for="passwordUsu" class="form-label">CONTRASEÑA: </label>
-                           <input type="password" place class="form-control" name="fpasswordUsu" id="passwordUsu"> 
+                           <input type="password" place class="form-control" name="fpasswordUsu" id="passwordUsu" placeholder="*********"> 
                        </div>
                         <br>
                        <div >
@@ -37,7 +55,11 @@
                    </form>
 
 
-                   <?php
+                   
+                </div>
+            </div>               
+    </div>
+    <?php
                     @$mensaje = $_GET['mensaje'];
                     if (isset($mensaje)){
                     if($mensaje=='incorrecto'){
@@ -46,8 +68,6 @@
 
                     }
                     ?>
-            </div>               
-    </div>
  
 </body>
 </html>
