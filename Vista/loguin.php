@@ -20,9 +20,16 @@
                     </div>
                     <div class="mb-2">
                            <label for="passwordUsu" class="form-label">CONTRASEÑA: </label>
-                           <input type="password" place class="form-control" name="fpasswordUsu" id="passwordUsu" placeholder="*********"> 
+                           <input type="password" class="form-control" name="fpasswordUsu" id="passwordUsu" placeholder="*********"> 
                     </div>
                     <br>
+                    <div class="mb-2"> ROL: 
+                    <select name="rol">    
+                        <option value="00">Administrador</option>    
+                        <option value="01">Usuario</option>    
+                    </select>
+                    <br>   
+                    </div>
                     <div >
                            <button type="submit" class="btn btn-success" name="fboton" value="ingresar">INICIAR SESION</button>
                     </div>
