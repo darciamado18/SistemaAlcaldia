@@ -5,9 +5,17 @@
 }
 
 body {
+    background-image: url(../imagenes/landazuri.jpg);
     margin: 50px auto;
     text-align: center;
     width: 800px;
+}
+
+.fondo {
+    background-image: url(landazuri.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 h1 {

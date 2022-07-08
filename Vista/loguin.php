@@ -6,7 +6,7 @@
         <title>loguin</title>
         <link rel="stylesheet" href="../css/estiloLoguin.css">
     </head>
-    <body background="../imagenes/landazuri.jpg">
+    <body>
         
         <div class="container">
             <div class="row">
