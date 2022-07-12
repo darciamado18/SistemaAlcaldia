@@ -17,9 +17,9 @@
         }
 
         function verificar(){
-            $verificar = mysqli_query($this->_conexion, "SELECT u.idusuarioAlcaldia, d.iddatosPersonales, u.rol , u.correoUsu , u.passwordUsu , d.nombre1_Usu
+            $verificar = mysqli_query( $this->_conexion, "SELECT u.idusuarioAlcaldia, d.iddatosPersonales, u.rol , u.correoUsu , u.passwordUsu , d.nombre1_Usu
             FROM datospersonalesUsu D INNER JOIN  usuarioAlcaldia U ON u.idusuarioAlcaldia = d.iddatospersonalesUsu 
-            WHERE u.rol = '".$rol."' 
+            WHERE rol =     
             AND u.correoUsu = '$this->_correoUsu' AND u.passwordUsu = '$this->_passwordUsu' ")
             or die(mysqli_error( $this->_conexion));
             
