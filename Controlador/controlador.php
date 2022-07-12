@@ -6,10 +6,10 @@
     //verifica que el boton sea el de ingresar
     if($ingreso=='ingresar'){
         session_start();
-        $rol         = $_POST["rol"];
+        
         $correoUsu   = $_POST["fcorreoUsu"];
         $passwordUsu = $_POST["fpasswordUsu"];
-        
+        $rol         = $_POST["rol"];
        
         include_once("../modelo/mdloguin.php");
         $modelo      = new loguin($objeto, $conexion,$rol,$correoUsu,$passwordUsu);

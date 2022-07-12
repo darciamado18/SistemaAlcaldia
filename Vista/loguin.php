@@ -10,34 +10,35 @@
         
         <div class="container">
             <div class="row">
-            <h1 class="text-center">BIENVENIDO A LA PLATAFORMA ALCALDIA</h1>   
+                <h1 class="text-center">BIENVENIDO A LA PLATAFORMA ALCALDIA</h1>   
             
                 <form action="../controlador/controlador.php" method="POST">
-                    <div class="mb-2">
-                        <br>
-                           <label for="correoUsu" class="form-label" >Correo Electronico:</label>
-                           <input type="email" class="form-control" name="fcorreoUsu" id="correoUsu" placeholder="Escribe Su Correo"> 
+                    <div class="mb-2"> ROL: 
+                        <select name="rol">    
+                            <option value="00">Administrador</option>    
+                            <option value="01">Usuario</option>    
+                        </select>
                     </div>
+                    <br> 
+
                     <div class="mb-2">
-                           <label for="passwordUsu" class="form-label">CONTRASEÑA: </label>
-                           <input type="password" class="form-control" name="fpasswordUsu" id="passwordUsu" placeholder="*********"> 
+                        <label for="correoUsu" class="form-label" >Correo Electronico:</label>
+                        <input type="email" class="login" name="fcorreoUsu" id="correoUsu" placeholder="Escribe Su Correo"> 
                     </div>
                     <br>
-                    <div class="mb-2"> ROL: 
-                    <select name="rol">    
-                        <option value="00">Administrador</option>    
-                        <option value="01">Usuario</option>    
-                    </select>
-                    <br>   
+
+                    <div class="mb-2">
+                        <label for="passwordUsu" class="form-label">Contraseña: </label>
+                        <input type="password" class="login" name="fpasswordUsu" id="passwordUsu" placeholder="*********"> 
                     </div>
+                    <br>    
+
                     <div >
-                           <button type="submit" class="btn btn-success" name="fboton" value="ingresar">INICIAR SESION</button>
+                        <button type="submit" class="btn btn-success" name="fboton" value="ingresar">INICIAR SESION</button>
                     </div>
 
                 </form>
             </div>
-
         </div>
     </body>
-
 </html>
