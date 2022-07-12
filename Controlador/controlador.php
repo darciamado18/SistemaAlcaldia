@@ -12,13 +12,14 @@
         
        
         include_once("../modelo/mdloguin.php");
-        $modelo = new loguin($objeto, $conexion,$rol,$correoUsu,$passwordUsu);
-        $numIdUsu = $modelo->verificar();
-        $nombreUsu = $modelo->getNombre();
+        $modelo      = new loguin($objeto, $conexion,$rol,$correoUsu,$passwordUsu);
+        $id          = $modelo->verificar();
+        $nombre1_Usu = $modelo->getNombre();
         
         if($id > 0){
-            $_SESSION["fnumIdUsu"]=$numIdUsu;
-            $_SESSION["estado"]="si";
+            $_SESSION["idUsuarioAlcaldia"]= $id;
+            $_SESSION["nombre1_Usu"]      =$nombre1_Usu;
+            
            
             header("location: principal.php");   
             
