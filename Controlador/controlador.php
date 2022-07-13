@@ -4,15 +4,11 @@
     $objeto = new Conexion();
     $conexion = $objeto->conectarbd();
     //verifica que el boton sea el de ingresar
-    if($ingreso=='ingresar'){
-        session_start();
-        $rol         = $_POST["rol"]; 
-        $correoUsu   = $_POST["fcorreoUsu"];
-        $passwordUsu = $_POST["fpasswordUsu"];
-        
+    
+       
        
         include_once("../modelo/mdloguin.php");
-        $modelo      = new loguin($objeto, $conexion,$rol,$correoUsu,$passwordUsu);
+     /*   $modelo      = new loguin($objeto, $conexion,$rol,$correoUsu,$passwordUsu);*/
         $id          = $modelo->verificar();
         $nombre1_Usu = $modelo->getNombre();
         
@@ -27,5 +23,5 @@
         else{
             header("location:../vista/loguin.php?mensaje=incorrecto");
         }
-    }
+    
 ?>

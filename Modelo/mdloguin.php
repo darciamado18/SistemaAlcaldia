@@ -1,5 +1,14 @@
 <?php
-    class loguin{
+
+
+        $rol         = $_POST["rol"]; 
+        $correoUsu   = $_POST["fcorreoUsu"];
+        $passwordUsu = $_POST["fpasswordUsu"];
+        
+        session_start();
+        $_SESSION['fcorreoUsu'] = $correoUsu;
+
+  /*class loguin{
         private $_conexion;
         private $_idusuario;
         private $_iddatos;
@@ -14,14 +23,17 @@
             $this-> _rol= $rol;
             $this-> _correoUsu = $correoUsu;
             $this-> _passwordUsu = $passwordUsu;
-        }
+        }*/
 
-        function verificar(){
-            $verificar = mysqli_query( $this->_conexion, "SELECT u.idusuarioAlcaldia, d.iddatosPersonales, u.rol , u.correoUsu , u.passwordUsu , d.nombre1_Usu
+        
+
+        /*function verificar(){ */
+            $verificar = /*mysqli_query( $this->_conexion,*/ "SELECT u.idusuarioAlcaldia, d.iddatosPersonales, u.rol , u.correoUsu , u.passwordUsu , d.nombre1_Usu
             FROM datospersonalesUsu D INNER JOIN  usuarioAlcaldia U ON u.idusuarioAlcaldia = d.iddatospersonalesUsu 
-            WHERE rol =     
-            AND u.correoUsu = '$this->_correoUsu' AND u.passwordUsu = '$this->_passwordUsu' ")
-            or die(mysqli_error( $this->_conexion));
+            WHERE rol = '$rol' AND u.correoUsu = '$correoUsu' AND u.passwordUsu = '$passwordUsu' "/*)*/
+            /*or die(mysqli_error( $this->_conexion));*/
+            include_once("../modelo/mdconexion.php");
+            $resultado = mysqli_query($verificar);
             
             if(mysqli_num_rows($verificar)){
                 $unusuario = mysqli_fetch_array($verificar);
@@ -36,11 +48,11 @@
             }
             return $this->_idusuario;
            
-        }
-        function getNombre(){
+      /*  }*/
+       /* function getNombre(){
             return $this-> _nombre1_Usu;
             
         }
-    }
+   /*}*/
 ?> 
     

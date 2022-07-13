@@ -4,41 +4,44 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>loguin</title>
-        <link rel="stylesheet" href="../css/estiloLoguin.css">
+        <link href="../css/estiloLoguin.css">
     </head>
+
     <body background="../imagenes/landazuri.jpg">
         
         <div class="container">
-            <div class="row">
+           
                 <h1 class="text-center">BIENVENIDO A LA PLATAFORMA ALCALDIA</h1>   
             
-                <form action="../controlador/controlador.php" method="POST">
-                    <div class="mb-2"> ROL: 
+                <form action="../controlador/controlador.php" method="POST" class="form-signin">
+                     ROL: 
                         <select name="rol">    
                             <option value="00">Administrador</option>    
                             <option value="01">Usuario</option>    
                         </select>
-                    </div>
+                    
                     <br> 
-
-                    <div class="mb-2">
-                        <label for="correoUsu" class="form-label" >Correo Electronico:</label>
-                        <input type="email" class="login" name="fcorreoUsu" id="correoUsu" placeholder="Escribe Su Correo"> 
-                    </div>
                     <br>
 
-                    <div class="mb-2">
+                    
+                        <label for="correoUsu" class="sr-only" >Correo Electronico:</label>
+                        <input type="email" class="form-control" name="fcorreoUsu" id="correoUsu" placeholder="Escribe Su Correo"> 
+                   
+                    <br>
+                    <br>
+
+                    
                         <label for="passwordUsu" class="form-label">Contraseña: </label>
                         <input type="password" class="login" name="fpasswordUsu" id="passwordUsu" placeholder="*********"> 
-                    </div>
+                    <br>
                     <br>    
 
-                    <div >
-                        <button type="submit" class="btn btn-success" name="fboton" value="ingresar">INICIAR SESION</button>
-                    </div>
+                    
+                        <button type="submit" class="btn btn-lg  btn-primary btn-block" name="fboton" value="ingresar">INICIAR SESION</button>
+                    
 
                 </form>
-            </div>
+            
         </div>
     </body>
 </html>
