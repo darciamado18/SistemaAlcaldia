@@ -15,7 +15,7 @@
             
                 <form action="../controlador/controlador.php" method="POST" class="form-signin">
                      ROL: 
-                        <select name="rol">    
+                        <select name="roles">    
                             <option value="00">Administrador</option>    
                             <option value="01">Usuario</option>    
                         </select>
