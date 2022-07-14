@@ -13,19 +13,17 @@
   <link rel="stylesheet" href="../css/hoja.css" >
 </head>
 
-<body>
+<body background="../SistemaAlcaldia/imagenes/saman.jpg">
   <?php
 
   session_start();
-  @$estado = $_SESSION["estado"];
-  if($estado=="si"){
-        header("location:../SistemaAlcaldia/vista/principal.php");    
-  }
-  else{
-       header("location:../SistemaAlcaldia/vista/loguin.php");   
-
-  }
-  ?>  
-
+    @$estado = $_SESSION["estado"];
+    if($estado=="si"){
+      header("location:../SistemaAlcaldia/vista/principal.php");    
+    }
+    else{
+      header("location:../SistemaAlcaldia/vista/loguin.php");
+    }
+  ?>
 </body>
 </html>
