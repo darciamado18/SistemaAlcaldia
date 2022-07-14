@@ -4,12 +4,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>INICIO DE SESION (ALCALDIA MUNICIPAL DE LANDÁZURI)</title>
-        <link href="../bootstrap/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/estiloejemplo.css" >
+        <link href="../css/estiloLoguin.css">
+        
     </head>
 
     <body background="../imagenes/landazuri.jpg">        
-        <div class="container">           
+        <div div class="container">
+          
+                 
                 <h1 class="text-center">BIENVENIDO A LA PLATAFORMA ALCALDIA</h1>   
             
                 <form action="../controlador/controlador.php" method="POST" class="form-signin">

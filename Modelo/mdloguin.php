@@ -27,7 +27,7 @@
             if(mysqli_num_rows($verificar)){
                 $unusuario = mysqli_fetch_array($verificar);
                /* $this->_idusuario   = $unusuario["idusuariosAlcaldia"];
-                $this->_iddatos     = $unusuario["iddatosPersonales"];*/
+                $this->_iddatos     = $unusuario["iddatosPersonales"];*/    
                 $this->_rol         = $unusuario["rol"];
                 $this->_correoUsu   = $unusuario["correoUsu"];
                 $this->_passwordUsu = $unusuario["passwordUsu"];
