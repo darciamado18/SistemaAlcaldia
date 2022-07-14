@@ -1,8 +1,4 @@
-<?php
-
-
-        session_start();
-        $_SESSION['fcorreoUsu'] = $correoUsu;
+<?php    
 
   class loguin{
         private $_conexion;
@@ -11,33 +7,27 @@
         private $_rol;
         private $_correoUsu;
         private $_passwordUsu;
-        private $_nombre1_Usu;
-        
-        
+        private $_nombre1_Usu;       
             
-            function __construct($conexion,$rol,$correoUsu,$passwordUsu){
-            $this-> _conexion = $conexion;
-            $this-> _rol= $rol;
-            $this-> _correoUsu = $correoUsu;
-            $this-> _passwordUsu = $passwordUsu;
-                echo "paso contrstror modelo";
+        function __construct($conexion,$rol,$correoUsu,$passwordUsu){
+            $this-> _conexion    = $conexion;
+            $this-> _rol         = $rol;
+            $this-> _correoUsu   = $correoUsu;
+            $this-> _passwordUsu = $passwordUsu;        
         }
 
         
 
         function verificar(){ 
-            $verificar = mysqli_query( $this->_conexion, "SELECT u.idusuarioAlcaldia, d.iddatosPersonales, u.rol , u.correoUsu , u.passwordUsu , d.nombre1_Usu
-            FROM datospersonalesUsu D INNER JOIN  usuarioAlcaldia U ON u.idusuarioAlcaldia = d.iddatospersonalesUsu 
-            
-            WHERE rol = '$this->_rol' AND u.correoUsu = '$this->_correoUsu' AND u.passwordUsu = '$this->_passwordUsu' ")
+            $verificar = mysqli_query( $this->_conexion, "SELECT u.rol , u.correoUsu , u.passwordUsu , d.nombre1_Usu
+            FROM datospersonalesUsu D INNER JOIN  usuarioAlcaldia U ON u.idusuarioAlcaldia = iddatospersonalesUsu 
+            WHERE  u.rol = '$this->_rol' AND u.correoUsu = '$this->_correoUsu' AND u.passwordUsu = '$this->_passwordUsu'   ")
             or die(mysqli_error( $this->_conexion));
-            
-
-           
+                       
             if(mysqli_num_rows($verificar)){
                 $unusuario = mysqli_fetch_array($verificar);
-                $this->_idusuario   = $unusuario["idusuariosAlcaldia"];
-                $this->_iddatos     = $unusuario["iddatosPersonales"];
+               /* $this->_idusuario   = $unusuario["idusuariosAlcaldia"];
+                $this->_iddatos     = $unusuario["iddatosPersonales"];*/
                 $this->_rol         = $unusuario["rol"];
                 $this->_correoUsu   = $unusuario["correoUsu"];
                 $this->_passwordUsu = $unusuario["passwordUsu"];
