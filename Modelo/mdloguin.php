@@ -20,14 +20,14 @@
 
         function verificar(){ 
             $verificar = mysqli_query( $this->_conexion, "SELECT u.rol , u.correoUsu , u.passwordUsu , d.nombre1_Usu
-            FROM datospersonalesUsu D INNER JOIN  usuarioAlcaldia U ON u.idusuarioAlcaldia = iddatospersonalesUsu 
+            FROM usuarioAlcaldia u INNER JOIN datospersonalesUsu d ON u.idusuarioAlcaldia = d.iddatospersonales 
             WHERE  u.rol = '$this->_rol' AND u.correoUsu = '$this->_correoUsu' AND u.passwordUsu = '$this->_passwordUsu'   ")
             or die(mysqli_error( $this->_conexion));
                        
             if(mysqli_num_rows($verificar)){
                 $unusuario = mysqli_fetch_array($verificar);
-               /* $this->_idusuario   = $unusuario["idusuariosAlcaldia"];
-                $this->_iddatos     = $unusuario["iddatosPersonales"];*/    
+                $this->_idusuario   = $unusuario["idusuariosAlcaldia"];
+                $this->_iddatos     = $unusuario["iddatosPersonales"];
                 $this->_rol         = $unusuario["rol"];
                 $this->_correoUsu   = $unusuario["correoUsu"];
                 $this->_passwordUsu = $unusuario["passwordUsu"];
