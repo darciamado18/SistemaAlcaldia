@@ -1,29 +1,27 @@
-* {
+/** {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+}*/
 
 body {
-    background-image: url("../imagenes/landazuri.jpg");
-    margin: 50px auto;
-    text-align: center;
-    width: 800px;
-    color: green;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
 }
 
-.fondo {
+
+/*.fondo {
     background-image: url("imagenes/landazuri.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-position: center center;
-}
+}*/
 
-.h1 {
-    font-family: 'Passion One';
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: blue;
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 1px 2px #660066;
 }
 
 label {
@@ -45,7 +43,7 @@ input {
 form {
     margin: 100px auto;
     padding: 20px;
-    border: 5px solid #ccc;
+    border: 5px solid;
     width: 500px;
     background: #eee;
 }
@@ -54,14 +52,61 @@ div.form-element {
     margin: 20px 0;
 }
 
-button {
-    padding: 10px;
+.button {
+    background: yellowgreen;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #fff;
+    /*padding: 10px;
     font-size: 1.5rem;
     font-family: 'Lato';
     font-weight: 100;
     background: yellowgreen;
     color: white;
-    border: none;
+    border: none;*/
+}
+
+.button :hover {
+    background: #000009;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.button :visited {
+    background: #000225;
+    opacity: 1;
+}
+
+.header {
+    background: linear-gradient(-90deg, #33ccff, #000066, #9999ff);
+    -webkit-animation: header 20s ease infinite;
+    -moz-animation: header 20s ease infinite;
+    animation: header 20s ease infinite;
+    background-size: 500% 500%;
+}
+
+@-moz-keyframes header {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+@keyframes header {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
 }
 
 p.success,

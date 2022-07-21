@@ -14,9 +14,7 @@
             $this-> _rol         = $rol;
             $this-> _correoUsu   = $correoUsu;
             $this-> _passwordUsu = $passwordUsu;        
-        }
-
-        
+        }        
 
         function verificar(){ 
             $verificar = mysqli_query( $this->_conexion, "SELECT u.idusuarioAlcaldia, d.iddatospersonales, u.rol , u.correoUsu , u.passwordUsu , d.nombre1_Usu
@@ -37,7 +35,7 @@
             }
             return $this->_idusuario;           
         }
-        
+
        function getNombre(){
             return $this-> _nombre1_Usu;            
         }
