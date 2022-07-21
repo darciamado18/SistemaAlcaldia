@@ -6,8 +6,8 @@
 
 body {
     margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
-    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    /* color: yellow;*/
 }
 
 
@@ -19,9 +19,11 @@ body {
 }*/
 
 h1 {
+    border: #660066;
+    color: aliceblue;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    text-shadow: 1px 2px #660066;
+    text-shadow: 3px 5px #049308;
 }
 
 label {
@@ -29,55 +31,70 @@ label {
     display: inline-block;
     text-align: left;
     font-size: 1.5rem;
-    font-family: 'Lato';
+    font-family: 'Quicksand', sans-serif;
 }
 
-input {
+input
+/*Contenedor para escribir*/
+
+{
     border: 2px solid #ccc;
     font-size: 1.5rem;
     font-weight: 100;
-    font-family: 'Lato';
+    font-family: 'Quicksand';
     padding: 10px;
 }
 
+.container {
+    margin: 0 auto;
+    width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 form {
-    margin: 100px auto;
-    padding: 20px;
-    border: 5px solid;
-    width: 500px;
+    margin: 50px auto;
+    padding: 50px;
+    /*relleno*/
+    border: 6px solid #ccc;
+    width: 600px;
     background: #eee;
 }
 
 div.form-element {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
-.button {
+button {
+    align-tracks: center;
+    display: inline-block;
     background: yellowgreen;
     text-transform: uppercase;
     color: white;
-    border: 1px solid #fff;
-    /*padding: 10px;
-    font-size: 1.5rem;
-    font-family: 'Lato';
+    border: 2px solid #ccc;
+    padding: 7px;
+    font-size: 1.4rem;
+    /*Tamaño boton*/
+    font-family: 'Fantasy';
+    /*Estilo de letra*/
     font-weight: 100;
     background: yellowgreen;
-    color: white;
-    border: none;*/
 }
 
-.button :hover {
-    background: #000009;
+button :hover {
+    background: #660066;
     opacity: 0.5;
     font-weight: bold;
 }
 
-.button :visited {
-    background: #000225;
+button :visited {
+    background: #9999ff;
     opacity: 1;
 }
 
-.header {
+header {
     background: linear-gradient(-90deg, #33ccff, #000066, #9999ff);
     -webkit-animation: header 20s ease infinite;
     -moz-animation: header 20s ease infinite;
@@ -112,7 +129,7 @@ div.form-element {
 p.success,
 p.error {
     color: white;
-    font-family: lato;
+    font-family: 'lato';
     background: yellowgreen;
     display: inline-block;
     padding: 2px 10px;

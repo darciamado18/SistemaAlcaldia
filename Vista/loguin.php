@@ -14,19 +14,20 @@
             <div class="row">  
                 <div class="col-lg-15">       
                  
-                <h1 class="text-center">
-                <h1 class="text-primary">
+                <h1 class="text-center    text-primary">    
+                <br>
                     BIENVENIDO A LA PLATAFORMA ALCALDIA
-                </h1>
                 </h1>   
             
                 <form action="../controlador/controlador.php" method="POST" class="form-label">
-                     ROL: 
+                    <div class="mb-1">
+                        ROL: 
                         <select name="frol">    
                             <option value="seleccione">    Seleccione    </option>
                             <option value="administrador"> Administrador </option>    
                             <option value="usuario">       Usuario       </option>    
-                        </select>                    
+                        </select>  
+                    </div>                        
                     <br> 
                     <br>
                     <div class="mb-0">                   
@@ -52,6 +53,11 @@
 
                     <div>                   
                         <button type="submit" class="btn btn-success  btn-primary btn-block" name="fboton" value="ingresar">INICIAR SESION</button>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <button>REGISTRARSE</button>
                     </div>
                 </form>  
                 </div>
