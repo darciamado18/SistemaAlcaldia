@@ -1,7 +1,12 @@
 body {
+    background-image: url(../imagenes/saman.jpg);
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
     color: #ffffff;
+}
+
+image {
+    margin: 0 auto;
 }
 
 h1 {

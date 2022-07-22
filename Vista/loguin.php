@@ -20,7 +20,7 @@
                 </h1>   
             
                 <form action="../controlador/controlador.php" method="POST" class="form-label">
-                    <div class="mb-1">
+                    <div>
                         ROL: 
                         <select name="frol">    
                             <option value="seleccione">    Seleccione    </option>
@@ -47,12 +47,12 @@
                     @$mensaje = $_GET['mensaje'];
                     
                         if ($mensaje == 'incorrecto') {
-                            echo '<div class = "alert alert-danger" role = "alert"> <h1 style = "color:black;">USUARIO O CLAVE O ROL INCORRECTO</h1></div>';
+                            echo '<div class = "alert alert-danger" role = "alert"  style = "color:black"> <h1>USUARIO O CLAVE O ROL INCORRECTO</h1></div>';
                         }
                     ?>   
-
+ 
                     <div>                   
-                        <button type="submit" class="btn btn-success  btn-primary btn-block" name="fboton" value="ingresar">INICIAR SESION</button>
+                        <button type="submit" class="btn btn-success  btn-primary btn-block alight: center" name="fboton" value="ingresar">INICIAR SESION</button>
                     </div>
                     <br>
                     <br>

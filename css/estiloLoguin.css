@@ -41,7 +41,7 @@ input
     border: 2px solid #ccc;
     font-size: 1.5rem;
     font-weight: 100;
-    font-family: 'Quicksand';
+    font-family: 'Serif';
     padding: 10px;
 }
 
@@ -52,6 +52,7 @@ input
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'serif';
 }
 
 form {
@@ -61,6 +62,7 @@ form {
     border: 6px solid #ccc;
     width: 600px;
     background: #eee;
+    color: #000066;
 }
 
 div.form-element {
@@ -126,13 +128,21 @@ header {
     }
 }
 
+.mensaje {
+    color: white;
+    font-family: 'Quicksand';
+    background: #33ccff;
+    display: inline-block;
+}
+
 p.success,
 p.error {
     color: white;
-    font-family: 'lato';
+    font-family: 'Quicksand';
     background: yellowgreen;
     display: inline-block;
     padding: 2px 10px;
+    text-shadow: 3px 5px #660066;
 }
 
 p.error {

@@ -17,7 +17,7 @@
             $nombre1_Usu = $modelo->getNombre();
         
         if($id > 0){
-            $_SESSION["idUsuarioAlcaldia"]= $id;
+            $_SESSION["idusuarioAlcaldia"]= $id;
             $_SESSION["nombre1_Usu"]      =$nombre1_Usu;            
             header("location:../vista/principal.php");             
         } else{
