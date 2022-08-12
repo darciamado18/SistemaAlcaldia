@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/estiloejemplo.css" >
     
 </head>
-<body background ="../imagenes/landazuri.jpg">
+<body background="../imagenes/atardecerIglesiaC.jpeg">
 
   <?php 
   session_start();
@@ -36,26 +36,6 @@
 
                     <li class="nav-item dropdown" >
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Prestar
-                      </a>
-                      <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="prestarLibro.php">Prestar Libro</a></li>
-                        <li><a class="dropdown-item" href="prestarEquipo.php">Prestar Equipo</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown" >
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Devolver
-                      </a>
-                      <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="devolverLibro.php">Devolver Libro</a></li>
-                        <li><a class="dropdown-item" href="devolverComputador.php">Devolver Equipo</a></li>
-                      </ul>
-                    </li>
-                   
-
-                    <li class="nav-item dropdown" >
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Buscar
                       </a>
 
@@ -71,10 +51,7 @@
                 </div>
               </div>
             </nav>
-          
-          <nav id="navTodo">
-          <div id="fondo"><img id="im" src="../imagenes/logosistema.png">
-          </div>
+         
         </form>
 </div>
 
