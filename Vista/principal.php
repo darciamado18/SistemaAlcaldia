@@ -10,7 +10,7 @@
 
     
 </head>
-<body background="../imagenes/atardecerIglesiaC.jpeg">
+<body background ="../imagenes/landazuri.jpg">
   <?php 
   session_start();
   @$nom = $_SESSION["nombre1_Usu"];
@@ -23,11 +23,11 @@
                     
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Registrar
+                        REGISTRAR
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="RegistrarLibro.php">Registar Libro</a></li>
-                        <li><a class="dropdown-item" href="RegistrarComputador.php">Registar Equipo</a></li>
+                        <li><a class="dropdown-item" href="registrarUsuarios.php">Registar Usuarios</a></li>
+                        
                       </ul>
                     </li>
                     <li class="nav-item dropdown" >
@@ -84,12 +84,10 @@
             </nav>
           
           <nav id="navTodo">
-          <div id="fondo"><img id="im" src="../imagenes/desc5.jpg">
+          <div id="fondo"><img id="im" src="../imagenes/logosistema.png">
           </div>
         </form>
-        <div class="flotante">
-          <img class="ima" src="../imagenes/icono.png">
-        <label class="labels" ><?php echo $nom ?></label>
+
 </div>
   </nav>
   <script src="../boodstrap/bootstrap.bundle.js"></script>  
